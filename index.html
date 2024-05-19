@@ -12,19 +12,28 @@
 <body>
 <!-- <audio src="02 Kaun Tujhe (MS Dhoni) Palak 190Kbps.mp3"   autoplay ></audio> -->
 
-
-<video src="https://www.taxmann.com/emailer/images/CompaniesAct.mp4" id="myVideo" autoplay  id="myVideo"></video>
-
+<button onclick="vedu();" id="name" >Submit</button>
+<!-- <video src="https://www.taxmann.com/emailer/images/CompaniesAct.mp4" id="myVideo" autoplay  id="myVideo"></video>
+ -->
 <script>
+
+    function vedu() {
+
+alert("Hello vedu");
+    
+}
     if (annyang) {
       // Let's define our first command. First the text we expect, and then the function it should call
       var commands = {
-        'play': function() {
-         document.getElementById("myVideo").play();
+        // 'play': function() {
+        //  document.getElementById("myVideo").play();
+        // },
+        // 'pause': function() {
+        //  document.getElementById("myVideo").pause();
+        // }
+           'play': function() {
+         document.getElementById("name").vedu();
         },
-        'pause': function() {
-         document.getElementById("myVideo").pause();
-        }
       };
     
       // Add our commands to annyang
