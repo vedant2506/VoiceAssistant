@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>voice assistant api</title>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+
+
+</head>
+<body>
+<audio src="02 Kaun Tujhe (MS Dhoni) Palak 190Kbps.mp3" controls id="myVideo" autoplay ></audio>
+
+
+<!-- <video src="avenger endgame hd.mkv" autoplay controls id="myVideo"></video> -->
+
+<script>
+    if (annyang) {
+      // Let's define our first command. First the text we expect, and then the function it should call
+      var commands = {
+        'play': function() {
+         document.getElementById("myVideo").play();
+        },
+        'pause': function() {
+         document.getElementById("myVideo").pause();
+        }
+      };
+    
+      // Add our commands to annyang
+      annyang.addCommands(commands);
+    
+      // Start listening. You can call this here, or attach this call to an event, button, etc.
+      annyang.start();
+    }
+    </script>
+</body>
+</html>
